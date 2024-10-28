@@ -7,10 +7,10 @@
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
             <v-img
-              max-width="40"
-              min-height="20"
+              max-width="30"
+              max-height="40"
               cover
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/YouTube_full-color_icon_%282024%29.svg/1486px-YouTube_full-color_icon_%282024%29.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" style="margin-left: 50px; margin-right: -15px;"
             ></v-img>
       <v-app-bar-title style="font-weight: 600">YouTube</v-app-bar-title>
     </v-app-bar>
