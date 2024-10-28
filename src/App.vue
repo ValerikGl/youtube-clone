@@ -7,8 +7,8 @@
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
             <v-img
-              :width="100"
-              aspect-ratio="16/9"
+              max-width="40"
+              min-height="20"
               cover
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/YouTube_full-color_icon_%282024%29.svg/1486px-YouTube_full-color_icon_%282024%29.svg.png"
             ></v-img>
