@@ -1,51 +1,55 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <v-app theme="dark">
+    <v-app-bar :elevation="2">
+      <template v-slot:prepend>
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      </template>
+            <v-img
+              :width="100"
+              aspect-ratio="16/9"
+              cover
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/YouTube_full-color_icon_%282024%29.svg/1486px-YouTube_full-color_icon_%282024%29.svg.png"
+            ></v-img>
+      <v-app-bar-title style="font-weight: 600">YouTube</v-app-bar-title>
+    </v-app-bar>
+
     <v-card>
       <v-layout>
-        <v-navigation-drawer expand-on-hover>
+        <v-navigation-drawer expand-on-hover rail>
           <v-list>
-            <v-list-item
-              prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-              subtitle="sandra_a88@gmailcom"
-              title="Sandra Adams"
-            ></v-list-item>
+            <v-list-item prepend-icon="mdi-menu" title="YouTube"></v-list-item>
           </v-list>
-
 
           <v-list density="compact" nav>
             <v-list-item
-              prepend-icon="mdi-folder"
-              title="My Files"
+              prepend-icon="mdi-home"
+              title="Home"
               value="myfiles"
             ></v-list-item>
 
             <v-list-item
-              prepend-icon="mdi-account-multiple"
-              title="Shared with me"
+              prepend-icon="mdi-youtube"
+              title="Shorts"
               value="shared"
             ></v-list-item>
 
             <v-list-item
-              prepend-icon="mdi-star"
-              title="Starred"
+              prepend-icon="mdi-youtube-subscription"
+              title="Subscriptions"
               value="starred"
             ></v-list-item>
-            
-            <v-list-item
-              prepend-icon="mdi-star"
-              title="Starred"
-              value="starred"
-            ></v-list-item>
-            
 
+            <v-list-item
+              prepend-icon="mdi-account-circle-outline"
+              title="Account"
+              value="starred"
+            ></v-list-item>
           </v-list>
         </v-navigation-drawer>
 
-        <v-main style="height: 250px"></v-main>
+        <v-main style="height: 550px"></v-main>
       </v-layout>
     </v-card>
   </v-app>
