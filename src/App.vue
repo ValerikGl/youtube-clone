@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  
   <v-app theme="dark">
     <v-app-bar :elevation="2" style="height: 75px">
       <template v-slot:prepend>
@@ -15,9 +16,9 @@
       ></v-img>
       <v-app-bar-title
         style="font-weight: 600; max-width: 100px; margin-right: -650px"
-        >YouTube</v-app-bar-title
-      >
+        >YouTube</v-app-bar-title>
 
+        
       <v-autocomplete
         :items="items"
         class="mx-auto"
@@ -30,7 +31,19 @@
         auto-select-first
         item-props
         rounded
-      ></v-autocomplete>
+        
+      >
+    </v-autocomplete>
+      
+      <v-icon icon="mdi-microphone" style="border-radius: 20px; height: 40px; width: 40px; background: #3D3D3D;"></v-icon>
+      <v-icon icon="mdi-video-plus-outline"></v-icon>
+      <v-icon icon="mdi-bell-outline"></v-icon>
+      <v-list>
+          <v-list-item
+            prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
+          ></v-list-item>
+        </v-list>
+
     </v-app-bar>
 
     <v-card>
@@ -67,6 +80,7 @@
       </v-layout>
     </v-card>
   </v-app>
+  
 </template>
 
 <style scoped></style>
