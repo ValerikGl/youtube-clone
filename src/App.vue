@@ -4,7 +4,7 @@
   <v-app theme="dark">
     <v-responsive class="border rounded" height="100vh">
       <v-app>
-        <v-navigation-drawer>
+        <v-navigation-drawer style="border-right: none;">
           <v-card>
             <v-layout>
               <v-navigation-drawer
@@ -12,6 +12,7 @@
                 :rail="rail"
                 permanent
                 @click="rail = false"
+                style="border-right: none;"
               >
                 <v-btn
                   icon="mdi-menu"
@@ -47,12 +48,13 @@
                   ></v-list-item>
                 </v-list>
               </v-navigation-drawer>
-              <v-main style="height: 250px"></v-main>
+              <v-main style="height: 100vh"></v-main>
             </v-layout>
           </v-card>
         </v-navigation-drawer>
 
-        <v-app-bar title="">
+        <v-app-bar title=""
+        style="">
           <v-img
             max-width="30"
             max-height="40"
@@ -105,15 +107,15 @@
 
               <v-chip>Music</v-chip>
 
-              <v-chip>Chip 3</v-chip>
+              <v-chip>laylists</v-chip>
 
-              <v-chip>Chip 3</v-chip>
+              <v-chip>Live</v-chip>
 
-              <v-chip>Chip 3</v-chip>
+              <v-chip>Watched</v-chip>
 
-              <v-chip>Chip 3</v-chip>
+              <v-chip>New to you</v-chip>
 
-              <v-chip>Chip 3</v-chip>
+              <v-chip>Racing video</v-chip>
 
               <v-chip>Chip 3</v-chip>
 
