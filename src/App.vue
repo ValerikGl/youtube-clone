@@ -113,26 +113,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    <!-- <v-app-bar :elevation="2" style="height: 75px">
       <template v-slot:prepend>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
