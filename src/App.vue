@@ -93,7 +93,7 @@ const allVideos = ref([
     category: "Tech",
   },
   {
-    thumbnail: "https://picsum.photos/400/220?random=1",
+    thumbnail: "https://picsum.photos/400/220?random=6",
     title: "Live from the Anjunakitchen",
     channel: "Anjunadeep",
     views: "95K views",
@@ -102,7 +102,7 @@ const allVideos = ref([
     category: "Music",
   },
   {
-    thumbnail: "https://picsum.photos/400/220?random=2",
+    thumbnail: "https://picsum.photos/400/220?random=7",
     title: "Morning Chill House Music",
     channel: "Alex Flare",
     views: "707K views",
@@ -111,7 +111,7 @@ const allVideos = ref([
     category: "Music",
   },
   {
-    thumbnail: "https://picsum.photos/400/220?random=3",
+    thumbnail: "https://picsum.photos/400/220?random=8",
     title: "Every Skoda vRS Drag Race",
     channel: "Carwow",
     views: "1.8M views",
@@ -120,7 +120,7 @@ const allVideos = ref([
     category: "Racing video",
   },
   {
-    thumbnail: "https://picsum.photos/400/220?random=4",
+    thumbnail: "https://picsum.photos/400/220?random=9",
     title: "Chillout Deep House Music Mix",
     channel: "Flavour Trip",
     views: "3.5M views",
@@ -197,7 +197,7 @@ const items = ["Search Item 1", "Search Item 2", "Search Item 3"];
         density="comfortable"
         menu-icon="mdi-magnify"
         placeholder="Search"
-        style="max-width: 650px; margin-top: -10px"
+        style="max-width: 650px; margin-top: 20px"
         theme="dark"
         variant="solo"
         auto-select-first
