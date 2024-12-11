@@ -3,7 +3,7 @@ import { ref, computed } from "vue";
 
 const allVideos = ref([
   {
-    thumbnail: "https://via.placeholder.com/400x220",
+    thumbnail: "https://picsum.photos/400/220?random=1",
     title: "Live from the Anjunakitchen",
     channel: "Anjunadeep",
     views: "95K views",
@@ -12,7 +12,7 @@ const allVideos = ref([
     category: "Music",
   },
   {
-    thumbnail: "https://via.placeholder.com/400x220",
+    thumbnail: "https://picsum.photos/400/220?random=2",
     title: "Morning Chill House Music",
     channel: "Alex Flare",
     views: "707K views",
@@ -21,7 +21,7 @@ const allVideos = ref([
     category: "Music",
   },
   {
-    thumbnail: "https://via.placeholder.com/400x220",
+    thumbnail: "https://picsum.photos/400/220?random=3",
     title: "Every Skoda vRS Drag Race",
     channel: "Carwow",
     views: "1.8M views",
@@ -30,7 +30,7 @@ const allVideos = ref([
     category: "Racing video",
   },
   {
-    thumbnail: "https://via.placeholder.com/400x220",
+    thumbnail: "https://picsum.photos/400/220?random=4",
     title: "Chillout Deep House Music Mix",
     channel: "Flavour Trip",
     views: "3.5M views",
@@ -39,7 +39,7 @@ const allVideos = ref([
     category: "Music",
   },
   {
-    thumbnail: "https://via.placeholder.com/400x220",
+    thumbnail: "https://picsum.photos/400/220?random=5",
     title: "Tesla Cybertruck Reveal",
     channel: "BulkDrive",
     views: "322K views",
@@ -154,7 +154,7 @@ const items = ["Search Item 1", "Search Item 2", "Search Item 3"];
             lg="3"
           >
             <v-card class="elevation-2 video-card" outlined>
-              <v-img :src="video.thumbnail" height="180px">
+              <v-img :src="video.thumbnail" aspect-ratio="16/9">
                 <template #append>
                   <div class="duration-overlay">{{ video.duration }}</div>
                 </template>
@@ -185,30 +185,44 @@ const items = ["Search Item 1", "Search Item 2", "Search Item 3"];
   position: absolute;
   bottom: 8px;
   right: 8px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 2px 6px;
-  border-radius: 3px;
+  padding: 4px 8px;
+  border-radius: 4px;
   font-size: 12px;
 }
 
 .video-title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
+  color: #fff;
 }
 
-.channel-name,
+.channel-name {
+  font-size: 14px;
+  color: #bbb;
+}
+
 .views-info {
   font-size: 13px;
-  color: gray;
+  color: #999;
 }
 
 .video-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1e1e1e;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
 }
 
 .video-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.v-img {
+  width: 100%;
+  object-fit: cover;
 }
 </style>
